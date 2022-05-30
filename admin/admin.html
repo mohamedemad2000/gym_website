@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IN SHAPE - ADMIN PAGE</title>
+        <link rel="shortcut icon" href="rel.png"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header >
+            <h1>
+             <span class="blue">IN </span><span class="orange">SHAPE</span>
+            <a href="..//Home/home.html"><input type="submit" class="btn" value="HOME PAGE"/></a>
+            </h1>
+         
+         </header>
+        <div class="container" id="ad">
+            <h1 id="pgfont" > <span class="blue" id="admincolor" >ADMIN</span> PAGE </h1>
+            <div class="float">
+                <img src="admin.jpeg" alt="admin's img"/>
+
+            <h3 ><span class="blue" id="txtcolor1">CHANGE THE BACKGROUND</span> <span class="orange" >COLOR</span></h3>
+            <button id="red" onclick="back('red')">RED</button>
+            <button id="green" onclick="back('green')">GREEN</button>
+            <button id="blue" onclick="back('blue')">BLUE</button>
+        
+            <h3 class="text"><span class="blue" id="txtcolor2">CHANGE THE TEXT</span> <span class="orange">COLOR</span></h3>
+            <button id="red" onclick="txtcolor('red')">RED</button>
+            <button id="green" onclick="txtcolor('green')">GREEN</button>
+            <button id="blue" onclick="txtcolor('blue')">BLUE</button>
+
+            <h3 class="text left"><span class="blue" id="txtcolor3">CHANGE THE TEXT</span> <span class="orange">SIZE</span></h3>
+          <span class="size">
+            <button  id="small" onclick="txtsize('small')">SMALL</button>
+            <button id="medium" onclick="txtsize('medium')">MEDIUM</button>
+            <button  id="large" onclick="txtsize('large')">LARGE</button>
+          </span>
+
+        </div>
+        <script src="plugin.js">
+            
+        </script>
+    </body>
+</html>

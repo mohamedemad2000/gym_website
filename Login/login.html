@@ -1,0 +1,70 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="access/shape.css"> 
+        
+      <title>IN SHAPE - LOGIN</title>
+      <link rel="shortcut icon" href="rel.png"/>
+<meta name = "description" content="This is the Official website for IN SHAPE gym">
+
+    </head>
+    <body>
+
+    <header >
+        <h1>
+         <span class="blue">IN </span><span class="orange">SHAPE</span>
+        </h1>
+     
+     </header>
+       <p class="para">
+            WELCOME TO LOGIN PAGE
+       </p>
+        <div class="form">
+
+			<label> USERNAME</label>
+			<input id="1" type="text"  placeholder="Enter your username "/> <br><br>
+			<label> PASSWORD </label>
+			<input id="2" type="password" placeholder="Enter your password"/> <br><br>
+			<button type="submit" onclick="validateform() ">
+			LOGIN
+        </button>
+        </div>
+        <script type="text/javascript">
+			var valid = 1;
+            var adminname="admin";
+            var adminpass="0000";
+           
+                function validateform(){
+                    
+                   
+                    if (document.getElementById("1").value=="")
+                    {
+                        alert("username is empty");
+                        document.getElementById("1").focus();
+                        valid=0;
+                    }
+                    else if (document.getElementById("2").value=="")
+                    {
+                        alert("password is empty");
+                        document.getElementById("2").focus();
+                        valid=0;
+                    }
+                    else if(document.getElementById("1").value==adminname && document.getElementById("2").value==adminpass)
+                    {
+                        valid=2;
+                    }
+                    else
+                    {
+                        valid=1;
+                    }
+                    if(valid==1)
+                    {
+						window.location.href= "..//Home/home.html";	 
+                    }
+                    else if(valid==2)
+                    {
+                       window.location.href="..//admin/admin.html" 
+                    }
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IN SHAPE - CLASSES</title>
+    <link rel="shortcut icon" href="rel.png"/>
+<style>
+    :root
+{
+    --orange-color:#ed563b;
+    --blue-color:#4f5761;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    color:white;
+}
+
+ul
+{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+ul li{
+    display:inline-block;
+}
+.orange
+{
+    color:#ed563b;
+}
+.blue
+{
+    color:var(--blue-color);
+}
+.btn
+{
+   opacity:0.8;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color:orangered;
+   background-color: black;
+   border: 2px solid orangered;
+   border-radius: 50px;
+   padding: 10px;
+   font-size: 18px;
+   cursor: pointer;
+}
+.btn:hover
+{
+    background-color: #f77b65;
+    color:white;
+  
+}
+/*END GENERAL RULES*/
+
+/*START HEADER SECTION*/
+ header h1{
+     margin :0;
+     padding:0;
+     font-weight: bolder;
+     float: left;
+     width:40%;
+     letter-spacing: .8em;
+   
+ }
+ header ul
+ {
+     float:left;
+     width:60%;
+     
+ }
+ header
+ {
+    overflow: hidden;
+    padding:20px;
+    background-color:  #f7f7f7;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+  
+ }
+header ul li
+{
+    margin-left:60px;
+    font-weight: 1000;
+    font-size:14px;
+    cursor:pointer;  
+}
+header ul li:hover
+{
+    color:var(--orange-color);
+}
+header ul .orange:hover
+{
+    color:var(--blue-color);
+}
+.tit{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-right: 450px;
+    padding-left: 450px;
+    color: #ed563b;
+    background-image: url("pexels-ashutosh-sonwani-3562117.jpg") ;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:fantasy;
+    font-weight: bold;
+
+}
+
+.tit2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    background-color:#ed563b ;
+  
+}
+.image{
+   width: 400px;
+}
+.image1{
+    position: absolute;
+   top: 1250px;
+   left: 935px;
+    width: 400px;
+}
+.image2{
+    position: absolute;
+    top : 1550px;
+    width: 400px;
+}
+.image3{
+    position: absolute;
+    top: 1850px;
+    width: 400px;
+    left: 935px;
+}
+.barbell{
+    text-align: center;
+    position: absolute;
+    top: 975px;
+    left:450px ;
+}
+.ropes{
+    position: absolute;
+    top: 1275px;
+    right: 450px;
+}
+.yoga{
+    position: absolute;
+    top: 1575px;
+    left: 450px;
+}
+.zumba{
+    position: absolute;
+    top: 1875px;
+    right: 450px;
+}
+
+.barbellp{
+    position: absolute;
+    color: black;
+    top: 995px;
+    left: 500px;
+    right: 50px;
+    bottom: 50px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+}
+.barbellp:hover{
+    color:white;
+}
+.ropesp{
+    position: absolute;
+    color: black;
+    top: 1300px;
+    left: 50px;
+    right: 500px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+}
+.ropesp:hover{
+    color:white;
+}
+
+.yogap{
+    position: absolute;
+    color: black;
+    top: 1600px ;
+    left: 500px;
+    right: 50px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+}
+.yogap:hover{
+    color:white;
+}
+.zumbap{
+    position: absolute;
+    color: black;
+    top: 1900px ;
+    right: 450px;
+    left: 50px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+}
+.zumbap:hover{
+    color:white;
+}
+
+</style>
+</head>
+
+<body bgcolor="#4f5761">
+    <header class="conatiner">
+        <h1>
+         <span class="blue">IN </span><span class="orange">SHAPE</span>
+        </h1>
+        <ul>
+            <a href="..//Home/home.html"><li class="blue">HOME</li></a>
+            <li class="blue">CLASSES</li>
+           <a href="..//sechdule/gym.html"> <li class="blue">SECHDULES</li></a>
+           <a href="..//contact/contact.html"> <li class="orange">CONTACT</li></a>
+         <a href="..//logout/logout.html"><li><button class="btn" >LOG OUT</button></li></a>
+        </ul>
+     </header>
+    <div>
+        <p class="tit">NO PAIN<br>  NO GAIN</p>
+        <p class="tit2">OUR CLASSES</p>
+        <article class="a">
+            <img class="image" src="pexels-victor-freitas-841130.jpg" alt="holding barbell">
+            <details>
+                <summary class="barbell">HOLDING BARBELL</summary>
+                <p class="barbellp">
+                     A really simple exercise to perform that will give you great results is the barbell hold. 
+                     For this exercise ideally you will have access to a barbell and rack to rest the bar on in between sets.
+                     <br>You want to start off by setting the rack height to just below your hips,
+                     unless you have giant ape arms, then just have it a couple of inches below the tips of your fingers.
+                     Using overhand grip you want to grab the bar, preferably using the same grip you would for deadlifts, 
+                     or just outside of the hips.<br>Bend down and pick up the barbell lifting the weight off the rack, 
+                     you want to keep your back tight and hands closed!<br> Holding the weight for as long as possible 
+                     you want to hold the barbell tight. When you are managing above 30 seconds you’ll want to go ahead and increase the weight.
+
+                </p>
+            </details>
+        </article>
+
+       <article class="a">
+         <img class="image1" src="pexels-leon-martinez-1552242.jpg" alt="holding ropes"> 
+          <details>
+            <summary class="ropes">HOLDING ROPES</summary>
+            <p class="ropesp">
+                 You'll definitely work both arms, along with your back, chest, legs, and core, depending on your routine.
+                 <br> Adding ropes to your routine also provides a killer cardio workout without the monotony that comes with
+                 other aerobically-focused activities. You'll sweat bullets while you swing, no matter what you're 
+                 training to do. You can train for power by slamming the ropes on the ground, too—the possibilities are endless.
+            </p> 
+        </details>
+       </article>
+
+        <article class="a">
+             <img class="image2" src="pexels-li-sun-2294353.jpg" alt="yoga">
+            <details>
+                <summary class="yoga">YOGA</summary>
+                <p class="yogap"> 
+                     It’s time to roll out your yoga mat and discover the combination of physical and mental exercises
+                     that for thousands of years have hooked yoga practitioners around the globe. 
+                     The beauty of yoga is that you don’t have to be a yogi or yogini to reap the benefits.
+                      Whether you are young or old, overweight or fit, yoga has the power to calm the mind and 
+                      strengthen the body. Don’t be intimidated by yoga terminology, fancy yoga studios and 
+                      complicated poses. Yoga is for everyone.
+                </p>
+            </details>
+        </article>
+
+        <article class="a">
+            <img class="image3" src="pexels-andrea-piacquadio-3775566.jpg" alt="zumba">
+            <details>
+                <summary class="zumba">ZUMBA</summary>
+                <p class="zumbap">
+                     Zumba is a fitness program that combines Latin and international music with dance moves. 
+                     Zumba routines incorporate interval training — alternating fast and slow rhythms — to help improve 
+                     cardiovascular fitness.<br> Zumba is an aerobic activity that can count toward the amount of aerobic
+                     activity recommended for most healthy adults by the Department of Health and Human Services.<br>
+                     Aerobic exercise can reduce health risks, help maintain a healthy weight, strengthen your heart and boost
+                      your mood. If you enjoy Zumba, you're also more likely to do it regularly and experience its benefits 
+                      as an aerobic exercise.
+                </p>      
+            </details>
+        </article>
+          
+    </div>
+</body>
+</html>

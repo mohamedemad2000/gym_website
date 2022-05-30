@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<title>IN SHAPE</title>
+<link rel="shortcut icon" href="rel.png"/>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="assest/css/stylesheet.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<html>
+<body>
+<header >
+   <h1>
+    <span class="blue">IN </span><span class="orange">SHAPE</span>
+   </h1>
+
+</header>
+
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1"/>
+            <input type="radio" name="radio-btn" id="radio2"/>
+            <input type="radio" name="radio-btn" id="radio3"/>
+            <input type="radio" name="radio-btn" id="radio4"/>
+            <!--radio buttons end-->
+    
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="assest/imgs/img1.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="assest/imgs/img2.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="assest/imgs/img3.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="assest/imgs/img4.jpg"/>
+            </div>
+            <!--slide images end-->
+    
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+    
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+    </div>
+    <div class="conatiner txt" >
+        <strong>WORK HARDER, GET STRONGER</strong>
+        <br>
+        <h1>EASY WITH OUR <span class="orange">GYM</span></h1>
+        <br>
+       <a href="register/register.html"> <button class="btn" >BECOME A MEMBER</button></a>
+        <br>
+        <br>
+        <button class="btn" onclick="login()" >LOG IN</button>
+        
+    </div>
+
+<script src="assest/js/style.js"></script>
+</body>
+</html>

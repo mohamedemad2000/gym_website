@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>IN SHAPE - REGISTER</title>
+<link rel="shortcut icon" href="rel.png"/>
+        <style>
+          .register{
+                opacity: 0.7;
+                Font-family:’poppins’,sans-serif;
+                font-size: 80px;
+                text-align: center;
+                color: orangered;
+                font-weight: bold;
+                text-shadow: 2px 5px black;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                text-transform: uppercase;  
+            }
+            body{
+               margin :0;
+               padding:0;
+               font-family:'Poppins', sans-serif;
+            } 
+           header h1{
+              margin :0px;
+              padding:0;
+              font-weight: bolder;
+              letter-spacing: .8em;
+   
+            }
+
+            header
+         {
+            padding:15px;
+            background-color:  #f7f7f7;
+            text-shadow: 1px 1px black;
+         }
+
+         .orange
+        {
+           color:#ed563b;
+        }
+        .blue
+        {
+           color: #4f5761;
+        }
+              .firstname, .lastname, .mail, .pass, .conPass, .phone {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: xx-large;
+                color: orangered;
+                text-shadow: 2px 5px black;
+                
+            }
+           .txtbox {
+                opacity: 0.5;
+                height:28px;
+                color: white;
+                border: 2px solid orangered;
+                border-radius: 4px;
+                background-color: black;
+                margin-top: 8px;
+            }
+          .radio {
+                 opacity: 0.7;
+                 height: 20px ;
+                 width: 20px;
+                 vertical-align:middle;
+                 margin-top: 10px; 
+                 margin-bottom: 20px;
+            }
+            .type {
+                color: orangered ;
+                text-shadow: 2px 5px black;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: x-large;
+                align-content: right;
+            }
+            .Submit {
+                opacity: 0.8;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: orangered ;
+                background-color: black;
+                border: 2px solid orangered;
+                border-radius: 4px;
+                width: 130px;
+                height: 40px; 
+                font-size:x-large;
+                cursor: pointer;
+            }
+            .Submit:hover{
+                opacity: 0.7;
+                background-color: orangered;
+                color: black;
+                border: 5px solid black;
+            }
+        </style>
+        <script type="text/javascript">
+            function validRegister()
+            {
+                
+              var valid=true;
+              if(document.getElementById("form").firstName.value=="")
+               {
+                   alert("Name is empty");
+                   document.getElementById("form").firstName.focus();
+                   valid=false;
+               }
+              else if(document.getElementById("form").mail.value=="")
+               {
+                   alert("Email is empty");
+                   document.getElementById("form").mail.focus();
+                   valid=false;
+               }
+               else if(document.getElementById("form").mail.value.indexOf ("@")==-1 ||document.getElementById("form").mail.value.indexOf(".")==-1 )
+                {
+                    alert("E-mail must be username@yahoo.com" );
+                    document.getElementById("form").mail.focus();
+                    valid=false;
+                }
+                else if (document.getElementById("form").pass.value==""||document.getElementById("form").conPass.value=="")
+                {
+                    alert("password is empty");
+                    document.getElementById("form").conPass.focus();
+                    document.getElementById("form").pass.focus();
+                    valid=false;
+                }
+                else if (Object.keys(document.getElementById("form").pass.value).length < 8 || Object.keys(document.getElementById("form").conPass.value).length < 8)
+                {
+                    alert("Password must be at least 8 elements");
+                    document.getElementById("form").conPass.focus();
+                    document.getElementById("form").pass.focus();
+                    valid=false;
+                }
+                else if (Object.keys(document.getElementById("form").phone.value).length != 11 )
+                {
+                    alert("Phone number must be 11 elements");
+                    document.getElementById("form").phone.focus();
+                    valid=false;
+                }
+               else if(document.getElementById("form").pass.value !=  document.getElementById("form").conPass.value )
+                {
+                    alert("password doesn't match confirm password");
+                    document.getElementById("form").conPass.focus();
+                    document.getElementById("form").pass.focus();
+                    valid=false;
+                }
+                else if (document.getElementById("male").checked == false && document.getElementById("female").checked == false)
+                {
+                    alert("You must choose a Male or a Female");
+                    valid=false;
+                }
+                // else
+                // {
+                //     valid=true;
+                // }
+                 if (valid===true) {
+                    window.location.href= "..//Home/home.html";
+                }
+                return false;
+              
+            }
+         </script>
+    </head>
+   <body style="background-image:url('reg.jpg');background-repeat: no-repeat;background-size:1500px;background-position: 0px;">
+         <header class="conatiner">
+                <h1>
+                 <span class="blue">IN </span><span class="orange">SHAPE</span>
+                </h1>             
+             </header>
+        
+            <form id="form" style="text-align: center">
+               <p class="register">
+                Register Form
+               </p> 
+               <label for= "firstName" class= "firstname" style="margin-right: 130px">First Name </label>
+               <input type ="text" name ="firstName" class="txtbox"size ="50px" id="firstname" placeholder="Enter Name .. "><br>
+               <label for="lastname" class="lastname" style="margin-right: 135px">Last Name </label>
+               <input type ="text" class="txtbox" size ="50px" id="lastname" placeholder="Enter Last Name .."><br>
+               <label for="mail" class="mail" style="margin-right: 183px">E-mail </label>
+               <input type ="text" name="mail" class="txtbox" size ="50px" id="mail" placeholder="Enter mail .."><br>
+               <label for="pass" class="pass" style="margin-right: 140px">Password </label>
+               <input type ="password" name="pass" class="txtbox" size ="50px" id="pass" placeholder="Enter password .."><br>
+               <label for="conPass" class="conPass" style="margin-right: 30px">Confirm password </label>
+               <input type ="password" name="conPass"  class="txtbox"size ="50px" id="conPass" placeholder="Enter password .."><br>
+               <label for= "phone" class= "phone" style="margin-right: 77px">Phone Number </label>
+               <input type ="text" name ="phone" class="txtbox"size ="50px" id="phone" placeholder="Enter the number .. "><br>
+               <input class="radio" type="radio"  name= "gender" id= "male" value="male"> 
+               <label class="type" >Male</label>
+               <input class="radio" type="radio" name= "gender" id="female" value="female">
+               <label class ="type">Female</label> <br>
+               <input type="submit" class="Submit" size="50px" value="Submit" onclick="return validRegister()"><br>
+           
+            </form>
+    </body>
+</html>

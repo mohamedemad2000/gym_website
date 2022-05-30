@@ -1,0 +1,175 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    background-color: #4f5761;
+}
+header h1{
+    margin :0;
+    padding:0;
+    font-weight: bolder;
+    letter-spacing: .8em;
+    font-family:'Poppins', sans-serif
+}
+
+header
+{
+   padding:20px;
+   background-color:  #f7f7f7;
+ 
+}
+
+.orange
+{
+   color:#ed563b;
+}
+.blue
+{
+   color: #4f5761;
+}
+.container{
+    width:1170px;
+    margin:auto;
+    background-color:#f7f7f7;
+    margin-bottom:3%;
+    }
+div h1
+{
+    text-align: center;
+    font-weight: 900;
+    font-size:60px;
+    letter-spacing: .2em;
+    /* opacity: .9; */
+    color:#ed563b;
+    /* text-shadow: 2px 5px #4f5761; */
+}
+.float img
+{
+    float:left;
+    width:30%;
+}
+
+.float{
+    overflow:hidden;
+}
+
+
+/*new rules*/
+h3
+{
+    margin-left:48%;
+    font-style:italic;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 10px;
+}
+button 
+{
+    float:left;
+    width:18%;
+    padding:20px 60px;
+    margin-left:40px;
+    margin-bottom: 0;
+    color:white;
+    border: 0px solid white ;
+    border-radius: 5px;
+    font-weight: 900;
+    cursor:pointer;
+  
+}
+#red, .red
+{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#red:hover,
+.red:hover
+{
+    color:white;
+    background-color: red;
+    font-size:16px;
+    /* padding:0;
+   
+    text-align: center; */
+
+}
+#green,
+.green
+{
+    background-color: rgba(0, 128, 0, 0.705);
+}
+#green:hover,
+.green:hover
+{
+    color:white;
+    background-color: green;
+    font-size:16px;
+}
+#blue,
+.bluee
+{
+    background-color:rgba(0, 0, 255, 0.527);
+}
+#blue:hover,
+.bluee:hover
+{
+    color:white;
+    background-color: blue;
+    font-size:16px;
+}
+
+.text
+{
+    margin-left:52.5%;
+    margin-top:10%;
+  
+}
+
+.size button
+{
+
+    margin-bottom:10%;
+    background-color: rgba(128, 128, 128, 0.1);
+    color:black;
+    font-size: small;
+
+}
+.size button:hover
+{
+    background-color: #f7f7f7;
+}
+#medium:hover
+{
+    font-size:medium;
+}
+#large:hover
+{
+    font-size:large;
+}
+
+.left
+{
+    margin-left:53.5%;
+ 
+}
+
+.btn
+{
+   opacity:0.8;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color:orangered;
+   background-color: black;
+   border: 2px solid orangered;
+   border-radius: 50px;
+   padding: 10px;
+   font-size: 18px;
+   cursor: pointer;
+   margin-left:57.5%;
+}
+
+.btn:hover
+{
+    background-color: #f77b65;
+    color:white;
+  
+}
